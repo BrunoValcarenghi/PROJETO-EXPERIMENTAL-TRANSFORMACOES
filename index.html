@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANFORMAÇÕES</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/card.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="title">PROJETO EXPERIMENTAL: TRANSFORMAÇÕES</h1>
+
+    <div class="card-display-container">
+        <div class="left-column">
+
+            <div class="card-wrapper">
+                <button class="nav-btn prev-btn" onclick="changeCard(-1)">&#10094;</button>
+
+                <div class="card-flip-container" id="cardContainer" onclick="toggleFlip()">
+                    <div class="card-3d" id="card3d">
+
+                        <div class="card-front">
+                            <h1 id="cardNameFront">Card I</h1> 
+                            <h2>Frente</h2>
+                            <img src="img/card.png" class="card-character" id="cardImg" alt="Personagem da Carta">
+                            <div class="holo-glare" id="holoFront"></div>
+                        </div>
+
+                        <div class="card-back">
+                            <h1 id="cardNameBack">Card I</h1> 
+                            <h2>Verso</h2>
+                            <div class="holo-glare" id="holoBack"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="nav-btn next-btn" onclick="changeCard(1)">&#10095;</button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot active" onclick="selectCard(0)"></span>
+                <span class="dot" onclick="selectCard(1)"></span>
+                <span class="dot" onclick="selectCard(2)"></span>
+                <span class="dot" onclick="selectCard(3)"></span>
+                <span class="dot" onclick="selectCard(4)"></span>
+                <span class="dot" onclick="selectCard(5)"></span>
+            </div>
+
+        </div>
+
+        <div class="right-column">
+            <h1 class="card-title" id="cardTitle">Card I</h1>
+            <p class="card-description" id="cardDescription">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's            </p>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

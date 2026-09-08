@@ -1,0 +1,134 @@
+:root {
+
+    --f_primary: 'Playfair Display', serif;
+    --f_secondary: 'Poppins', sans-serif;
+
+    --laranja_light: #ec8444;
+    --laranja_dark: #cb6e43;
+    --marrom: #793922;
+    --bege: #fadbbf;
+
+    --holo-gradient-1: repeating-linear-gradient(
+        125deg,
+        #ffffff 0%,
+        #fef08a 12%,
+        #d97706 25%,
+        #ffffff 50%,
+        #fef08a 62%,
+        #d97706 75%,
+        #ffffff 100%
+    );
+
+    --holo-gradient-2: repeating-linear-gradient(
+        127deg,
+        #ffd700 0%,
+        #ffffff 10%,   
+        #3a2000 20%,   
+        #b8860b 30%,   
+        #ffffff 40%,   
+        #ffd700 50%
+    );
+}
+
+.card-flip-container {
+    width: 250px;
+    height: 360px;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-flip-container:hover {
+    transform: scale(1.05);
+}
+
+.card-3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    
+    transition: transform .3s ease-out, box-shadow 0.3s ease;
+}
+
+.card-3d.resetting {
+    transition: transform .3s ease-out, box-shadow 0.3s ease;
+}
+.card-flip-container:hover .card-3d {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transform-style: preserve-3d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+
+}
+
+.card-front {
+    background-image: url("../img/background-card.png");
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: #111;
+    border: 2px solid #333;
+}
+
+.card-back .card-bg {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card-character {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    pointer-events: none;
+    transform: translateZ(40px);
+    transition: transform 0.3s ease;
+}
+
+.card-flip-container:hover .card-character {
+    transform: translateZ(70px);
+}
+
+.holo-glare {
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.1;
+    mix-blend-mode: color-dodge;
+
+    background: var(--holo-gradient-1);
+    background-size: 300% 300%;
+    background-position: 50% 50%;
+
+    transition: opacity 0.4s ease, background-position 0.2s ease-out;
+}
+
+.card-flip-container:hover .holo-glare {
+    opacity: 0.2;
+}
+
+.card-3d.resetting .holo-glare {
+    transition: opacity 0.5s ease, background-position 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
