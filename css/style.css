@@ -6,6 +6,7 @@
     --laranja_light: #ec8444;
     --laranja_dark: #cb6e43;
     --marrom: #793922;
+    --marrom_dark: #4a2112;
     --bege: #fadbbf;
 
     --holo-gradient-1: repeating-linear-gradient(
@@ -38,8 +39,8 @@
 
 body {
     font-family: var(--f_primary);
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--bege);
+    color: var(--marrom);
     min-height: 100vh;
     padding: 20px;
 }
@@ -53,12 +54,15 @@ body {
 }
 
 .card-display-container {
+    box-shadow: 0 0 40px 10px rgba(74, 33, 18, .3);
+    color: var(--bege);
     margin:auto;
     display: flex;
     gap: 50px;
     max-width: 900px;
     width: 100%;
-    background-color: #1e1e1e;
+    background-color: var(--marrom);
+    background: linear-gradient(90deg, var(--bege) 50%, var(--marrom) 50%);
     padding: 40px;
     border-radius: 16px;
     align-items: center;
@@ -93,12 +97,12 @@ body {
 .card-title {
     font-size: 2.2rem;
     margin-bottom: 15px;
-    color: #ffffff;
 }
 
 .card-description {
     font-family: var(--f_secondary);
-    color: #aaaaaa;
+    text-indent: 30px;
+    text-align: justify;
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -107,8 +111,8 @@ body {
 
 .nav-btn {
     background-color: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #ffffff;
+    border: 2px solid var(--laranja_dark);
+    color: var(--laranja_dark);
     font-size: 1.2rem;
     width: 40px;
     height: 40px;
@@ -123,7 +127,9 @@ body {
 }
 
 .nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid var(--laranja_light);
+    color: var(--bege);
+    background-color: var(--laranja_light);
     transform: scale(1.1);
 }
 
@@ -144,7 +150,8 @@ body {
 .dot {
     width: 10px;
     height: 10px;
-    background-color: #444;
+    background-color: var(--bege);
+    border: 2px solid var(--laranja_light);
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s;
@@ -155,7 +162,6 @@ body {
 }
 
 .dot.active {
-    background-color: #e07a28;
-    box-shadow: 0 0 8px rgba(224, 122, 40, 0.8);
+    background-color: var(--laranja_light);
     transform: scale(1.2);
 }
