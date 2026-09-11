@@ -59,7 +59,7 @@ body {
     margin:auto;
     display: flex;
     gap: 50px;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     background-color: var(--marrom);
     background: linear-gradient(90deg, var(--bege) 50%, var(--marrom) 50%);

@@ -3,35 +3,42 @@ const cardsData = [
         id: 1, 
         title: "Card I", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"
+        image1: "img/1f.png",
+        image2: "img/1v.png"
     },
     {
         id: 2, 
         title: "Card II", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  the industry's   text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"
+        image1: "img/2f.png",
+        image2: "img/2v.png"
     },
     {
         id: 3, 
         title: "Card III", 
         desc: "Lorem Ipsum is simply  text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"},
+        image1: "img/card.png",
+        image2: "img/card.png"
+    },
     {
         id: 4, title: "Card IV", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"
+        image1: "img/card.png",
+        image2: "img/card.png"
     },
     {
         id: 5, 
         title: "Card V", 
         desc: "Lorem Ipsum is simply dummy text of the printing and  industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"
+        image1: "img/card.png",
+        image2: "img/card.png"
     },
     {
         id: 6, 
         title: "Card VI", 
         desc: "Lorem Ipsum is simply dummy text of the  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's", 
-        image: "img/card.png"
+        image1: "img/card.png",
+        image2: "img/card.png"
     }
 ];
 
@@ -72,14 +79,14 @@ function resetFlip() {
 function updateUI() {
     const card = cardsData[currentIndex];
     
-    const nameFront = document.getElementById('cardNameFront');
-    const nameBack = document.getElementById('cardNameBack');
-    
-    if (nameFront) nameFront.innerText = card.title;
-    if (nameBack) nameBack.innerText = card.title;
+    const imgFront = document.getElementById('imgFront');
+    const imgBack = document.getElementById('imgBack');
 
-    const imgEl = document.getElementById('cardImg');
-    if (imgEl) imgEl.src = card.image;
+    if (imgFront && imgBack) {
+        imgFront.src = card.image1;
+        imgBack.src = card.image2;
+    }
+
     document.getElementById('cardTitle').innerText = card.title;
     document.getElementById('cardDescription').innerText = card.desc;
 
