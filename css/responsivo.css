@@ -74,6 +74,13 @@
         text-align: justify;
         text-indent: 15px;
     }
+
+    .card-title-mobile{
+
+        display: block;
+
+    }
+
 }
 
 /* celularzinho */

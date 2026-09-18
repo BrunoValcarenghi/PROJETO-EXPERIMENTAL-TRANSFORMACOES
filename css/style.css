@@ -84,6 +84,14 @@ body {
     width: 100%;
 }
 
+.card-title-mobile{
+
+    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+
+}
+
 /* right */
 .right-column {
     flex: 1;
