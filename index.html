@@ -8,7 +8,8 @@
 
     
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
     <link rel="stylesheet" href="css/responsivo.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,53 +20,76 @@
 
 <body>
 
-    <h1 class="title">PROJETO EXPERIMENTAL: TRANSFORMAÇÕES</h1>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <img width="100px"src="img/logo.png" alt="Logo">
+            </a>
 
-    <div class="card-display-container">
-        <div class="left-column">
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="cards.html" class="nav-link">Cartas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Transformações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
 
-            <div class="card-wrapper">
-                <button class="nav-btn prev-btn" onclick="changeCard(-1)">&#10094;</button>
+            <!-- Botão Menu Hambúrguer (Mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
 
-                <div class="card-flip-container" id="cardContainer" onclick="toggleFlip()">
-                    <h1 class="card-title-mobile" id="cardTitle">Card I</h1>
-                    <div class="card-3d" id="card3d">
+    <img src="img/banner.png" alt="banner" class="banner">
 
-                        <div class="card-front">
-                            
-                            <img src="img/1f.png" class="card-character" id="imgFront" alt="Imagem da Carta">
-                            <div class="holo-glare" id="holoFront"></div>
-                        </div>
+    <hr>
 
-                        <div class="card-back">
-                            <img src="img/1v.png" class="card-character" id="imgBack" alt="Imagem da Carta">
-                            <div class="holo-glare" id="holoBack"></div>
-                        </div>
+    <h1 class="title">Seja bem-vinda à Casa Verônica. Sinta-se acolhida pela nossa equipe!</h1>
 
-                    </div>
-                </div>
+    <hr>
 
-                <button class="nav-btn next-btn" onclick="changeCard(1)">&#10095;</button>
-            </div>
+    <section class="main-card">
 
-            <div class="dots-container">
-                <span class="dot active" onclick="selectCard(0)"></span>
-                <span class="dot" onclick="selectCard(1)"></span>
-                <span class="dot" onclick="selectCard(2)"></span>
-                <span class="dot" onclick="selectCard(3)"></span>
-                <span class="dot" onclick="selectCard(4)"></span>
-                <span class="dot" onclick="selectCard(5)"></span>
-            </div>
+        <div class="texto">
+
+            <p>
+                O Espaço Multiprofissional Casa Verônica UFSM é 
+                um espaço dedicado ao acolhimento de pessoas em 
+                situação de violência de gênero e à promoção da 
+                igualdade de gênero nos campi da Instituição.
+            </p>
+            <p>
+                Atualmente, a Casa Verônica UFSM conta com 
+                uma equipe de profissionais para o atendimento 
+                de demandas da comunidade acadêmica, além de 
+                articular ações conjuntas com as redes de assistência 
+                da Universidade e do sistema público de saúde.
+            </p>
+            <p>                
+                O espaço oferece atividades educativas, como 
+                rodas de conversa, oficinas, cursos; além de  
+                atendimentos psicossocial e orientação jurídica. 
+            </p>
+            <p>                
+                A Casa Verônica UFSM é um espaço aberto para 
+                receber ações da comunidade acadêmica e externa, 
+                além de coletivos e projetos que desenvolvem 
+                atividades alinhadas às questões de gênero e 
+                suas interseccionalidades.
+            </p>
 
         </div>
 
-        <div class="right-column">
-            <h1 class="card-title" id="cardTitle">Card I</h1>
-            <p class="card-description" id="cardDescription">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's            </p>
+        <div class="imagem">
+            
+            <img src="img/old_logo.jpg" alt="ilustracao">
+
         </div>
 
-    </div>
+
+    </section>
 
     <script src="js/script.js"></script>
 </body>

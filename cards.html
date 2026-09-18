@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANFORMAÇÕES</title>
+
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/card-section.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <link rel="stylesheet" href="css/responsivo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <img width="100px"src="img/logo.png" alt="Logo">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="cards.html" class="nav-link">Cartas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Transformações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+
+            <!-- Botão Menu Hambúrguer (Mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="card-display-container">
+        <div class="left-column">
+
+            <div class="card-wrapper">
+                <button class="nav-btn prev-btn" onclick="changeCard(-1)">&#10094;</button>
+
+                <div class="card-flip-container" id="cardContainer" onclick="toggleFlip()">
+                    <h1 class="card-title-mobile" id="cardTitle">Card I</h1>
+                    <div class="card-3d" id="card3d">
+
+                        <div class="card-front">
+                            
+                            <img src="img/1f.png" class="card-character" id="imgFront" alt="Imagem da Carta">
+                            <div class="holo-glare" id="holoFront"></div>
+                        </div>
+
+                        <div class="card-back">
+                            <img src="img/1v.png" class="card-character" id="imgBack" alt="Imagem da Carta">
+                            <div class="holo-glare" id="holoBack"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="nav-btn next-btn" onclick="changeCard(1)">&#10095;</button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot active" onclick="selectCard(0)"></span>
+                <span class="dot" onclick="selectCard(1)"></span>
+                <span class="dot" onclick="selectCard(2)"></span>
+                <span class="dot" onclick="selectCard(3)"></span>
+                <span class="dot" onclick="selectCard(4)"></span>
+                <span class="dot" onclick="selectCard(5)"></span>
+            </div>
+
+        </div>
+
+        <div class="right-column">
+            <h1 class="card-title" id="cardTitle">Card I</h1>
+            <p class="card-description" id="cardDescription">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's            </p>
+        </div>
+
+    </div>
+
+    <script src="js/script-cards.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
