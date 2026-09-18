@@ -55,26 +55,25 @@ body {
 
 .card-display-container {
     box-shadow: 0 0 40px 10px rgba(74, 33, 18, .3);
-    color: var(--bege);
-    margin:auto;
+    margin: auto;
     display: flex;
-    gap: 50px;
     max-width: 1200px;
     width: 100%;
-    background-color: var(--marrom);
-    background: linear-gradient(90deg, var(--bege) 50%, var(--marrom) 50%);
-    padding: 40px;
     border-radius: 16px;
-    align-items: center;
+    overflow: hidden; /* Garante que os cantos arredondados cortem as cores internas */
+    padding: 0; /* Removido o padding para as cores encostarem nas bordas */
 }
 
 /* left */
-
 .left-column {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--bege);
+    padding: 40px 20px;
+    min-width: 0;
 }
 
 .card-wrapper {
@@ -86,12 +85,15 @@ body {
 }
 
 /* right */
-
 .right-column {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--marrom);
+    color: var(--bege);
+    padding: 40px 30px;
+    min-width: 0;
 }
 
 .card-title {
@@ -115,7 +117,8 @@ body {
     color: var(--laranja_dark);
     font-size: 1.2rem;
     width: 40px;
-    height: 40px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -165,3 +168,4 @@ body {
     background-color: var(--laranja_light);
     transform: scale(1.2);
 }
+

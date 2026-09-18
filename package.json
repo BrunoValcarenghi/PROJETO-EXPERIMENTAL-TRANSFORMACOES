@@ -1,0 +1,9 @@
+{
+  "name": "PROJETO-EXPERIMENTAL-TRANSFORMACOES",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {},
+  "scripts": {
+  "start": "npx serve -l 3000"
+}
+}
