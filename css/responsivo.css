@@ -112,17 +112,25 @@
         display: flex;
     }
 
+    .header {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+    }
+
     .nav-menu {
         position: absolute;
         left: -100%;
         top: 100%;
         flex-direction: column;
-        background-color: var(--marrom);
         width: 100%;
         text-align: center;
         transition: 0.3s ease;
         padding: 20px 0;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+        background-color: rgba(121, 57, 34, .7);
+
+        backdrop-filter: blur(7px);
+
     }
 
     .nav-item {

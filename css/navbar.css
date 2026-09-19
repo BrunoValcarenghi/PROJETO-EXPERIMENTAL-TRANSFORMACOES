@@ -1,5 +1,8 @@
 .header {
-    background-color: var(--marrom);
+    background-color: rgba(121, 57, 34, .7);
+
+    backdrop-filter: blur(7px);
+
     width: 100%;
     position: sticky;
     top: 0;
@@ -26,9 +29,10 @@
 }
 
 .nav-link {
+   
     color: var(--bege);
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration-color: transparent;
     transition: color 0.5s ease, text-decoration-color 0.5s ease;
 }
@@ -39,6 +43,7 @@
 }
 
 .hamburger {
+    background-color: #000;
     display: none;
     background: none;
     border: none;

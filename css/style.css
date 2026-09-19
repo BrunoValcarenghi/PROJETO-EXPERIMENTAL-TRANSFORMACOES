@@ -6,7 +6,6 @@
     --laranja_light: #ec8444;
     --laranja_dark: #cb6e43;
     --marrom: #793922;
-    --marrom_dark: #4a2112;
     --bege: #fadbbf;
 
     --holo-gradient-1: repeating-linear-gradient(
@@ -39,7 +38,7 @@
 
 body {
     font-family: var(--f_primary);
-    background-color: var(--bege);
+    background: linear-gradient(var(--marrom) 100px, #b7876d,  50%, var(--bege) 100%);
     color: var(--marrom);
     min-height: 100vh;
     margin: 0;
@@ -59,7 +58,7 @@ body {
 .banner{
 
     display: block; 
-    margin: 0 auto;    
+    margin: 20px auto;    
     max-width: 100%;   
     height: auto;
 
