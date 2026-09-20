@@ -32,7 +32,7 @@
    
     color: var(--bege);
     text-decoration: underline;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration-color: transparent;
     transition: color 0.5s ease, text-decoration-color 0.5s ease;
 }

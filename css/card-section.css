@@ -1,5 +1,6 @@
 
 .card-display-container {
+    background-color: var(--bege);
     box-shadow: 0 0 40px 10px rgba(74, 33, 18, .3);
     margin: 40px auto;
     display: flex;

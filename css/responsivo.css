@@ -109,6 +109,7 @@
     }
 
     .hamburger {
+        order: 1;
         display: flex;
     }
 
@@ -116,21 +117,31 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
     }
 
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
     .nav-menu {
-        position: absolute;
-        left: -100%;
-        top: 100%;
-        flex-direction: column;
+        
+        order: 2;
+        position: static;
         width: 100%;
+        flex-direction: column;
         text-align: center;
-        transition: 0.3s ease;
-        padding: 20px 0;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 
-        background-color: rgba(121, 57, 34, .7);
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.8s ease, opacity 0.6s ease, padding 0.6s ease;
+    }
 
-        backdrop-filter: blur(7px);
-
+    .nav-menu.active {
+        max-height:  500px;
+        opacity: 1;       
+        padding: 15px 0 5px 0; 
     }
 
     .nav-item {
