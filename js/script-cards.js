@@ -3,91 +3,67 @@ const cardsData = [
     {
         id: 1, 
         title: "Card I", 
-        desc: "Lorem Ipsum is simply dummy text of the " + 
-        "printing and typesetting industry. Lorem Ipsum " + 
-        "has been the industry's standard dummy text " + 
-        "ever since 1966.", 
-        image1: "img/1f.png",
-        image2: "img/1v.png"
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
+        image1: "../img/cartas/CONTEUDO-01.png",
+        image2: "../img/cartas/CONTEUDO-02.png",
+        link: "#"
     },
     {
         id: 2, 
         title: "Card II", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's text ever since 1966.", 
-        image1: "img/2f.png",
-        image2: "img/2v.png"
+        image1: "../img/cartas/CONTEUDO-03.png",
+        image2: "../img/cartas/CONTEUDO-04.png",
+        link: "#"
     },
     {
         id: 3, 
         title: "Card III", 
         desc: "Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
+        image1: "../img/cartas/CONTEUDO-05.png",
+        image2: "../img/cartas/CONTEUDO-06.png",
+        link: "#"
     },
     {
         id: 4, 
         title: "Card IV", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
+        image1: "../img/cartas/CONTEUDO-07.png",
+        image2: "../img/cartas/CONTEUDO-08.png",
+        link: "#"
     },
     {
         id: 5, 
         title: "Card V", 
         desc: "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
         image1: "img/card.png",
-        image2: "img/card.png"
+        image2: "img/card.png",
+        link: "#"
     },
     {
         id: 6, 
         title: "Card VI", 
         desc: "Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
         image1: "img/card.png",
-        image2: "img/card.png"
+        image2: "img/card.png",
+        link: "#"
     },
     {
         id: 7, 
         title: "Card VII", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
         image1: "img/card.png",
-        image2: "img/card.png"
+        image2: "img/card.png",
+        link: "#"
     },
     {
         id: 8, 
         title: "Card VIII", 
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
         image1: "img/card.png",
-        image2: "img/card.png"
-    },
-    {
-        id: 9, 
-        title: "Card IX", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
-    },
-    {
-        id: 10, 
-        title: "Card X", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
-    },
-    {
-        id: 11, 
-        title: "Card XI", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
-    },
-    {
-        id: 12, 
-        title: "Card XII", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png"
+        image2: "img/card.png",
+        link: "#"
     }
-
 ];
 
 //renderizando carta
@@ -171,7 +147,13 @@ function updateUI() {
     const titles = document.querySelectorAll('.card-title, .card-title-mobile');
     titles.forEach(el => el.innerText = card.title);
 
-    document.getElementById('cardDescription').innerText = card.desc;
+    const desc = document.getElementById('cardDescription');
+    if (desc) desc.innerText = card.desc;
+
+    const cardLink = document.getElementById('cardLink');
+    if (cardLink) {
+        cardLink.href = card.link; // CORRIGIDO: de currentCard.link para card.link
+    }
 
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, idx) => { dot.classList.toggle('active', idx === currentIndex); });
@@ -249,3 +231,6 @@ cardContainer.addEventListener('touchmove', (e) => {
 cardContainer.addEventListener('touchend', () => {
     handleReset();
 });
+
+// Inicialização da interface na primeira carga
+updateUI();

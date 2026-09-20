@@ -29,10 +29,10 @@
 }
 
 .card-3d.resetting {
-    transition: transform .3s ease-out, box-shadow 0.3s ease;
+    transition: transform .4s ease-out, box-shadow 0.7s ease;
 }
 .card-flip-container:hover .card-3d {
-    box-shadow: 0 0 30px 15px rgba(74, 33, 18, .4);;
+    box-shadow: 0 0 20px 15px rgba(74, 33, 18, .4);;
 }
 
 .card-front,
@@ -57,14 +57,14 @@
 }
 
 .card-front {
-    background-image: url("../img/FUNDO-01.png");
+    background-image: url("../img/cartas/FUNDO-09.png");
     background-size: cover;
     background-position: center;
     transform: rotateY(0deg);
 }
 
 .card-back {
-    background-image: url("../img/FUNDO-02.png");
+    background-image: url("../img/cartas/FUNDO-10.png");
     background-size: cover;
     background-position: center;
     transform: rotateY(180deg);
