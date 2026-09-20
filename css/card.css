@@ -83,6 +83,7 @@
     transform: translateZ(70px);
 }
 
+/*holo*/
 .holo-glare {
     position: absolute;
     inset: 0;
@@ -105,4 +106,47 @@
 
 .card-3d.resetting .holo-glare {
     transition: opacity 0.5s ease, background-position 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/*animacao*/
+.card-3d.card-changing {
+    animation: changeCardAnim 0.4s ease-in-out;
+}
+
+.card-wrapper {
+    overflow: hidden;
+}
+
+.card-3d.slide-out-left {
+    animation: slideOutLeft 0.25s ease-in forwards;
+}
+
+.card-3d.slide-in-right {
+    animation: slideInRight 0.25s ease-out forwards;
+}
+
+.card-3d.slide-out-right {
+    animation: slideOutRight 0.25s ease-in forwards;
+}
+
+.card-3d.slide-in-left {
+    animation: slideInLeft 0.25s ease-out forwards;
+}
+
+@keyframes slideOutLeft {
+    to { transform: translateX(-120%) rotate(-5deg); opacity: 0; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(120%) rotate(5deg); opacity: 0; }
+    to { transform: translateX(0) rotate(0deg); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+    to { transform: translateX(120%) rotate(5deg); opacity: 0; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-120%) rotate(-5deg); opacity: 0; }
+    to { transform: translateX(0) rotate(0deg); opacity: 1; }
 }
