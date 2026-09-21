@@ -47,8 +47,16 @@ body {
 
 .title{
 
-    
     font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.super-title{
+
+    font-size: 65px;
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -73,6 +81,32 @@ hr{
 
 }
 
+.btn{
+
+    margin-top: 30px;
+
+    max-width: 200px;
+    color: var(--marrom);
+    background-color: var(--bege);
+    border-radius: 36px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: var(--f_secondary);
+    text-align: center;
+    font-size: 1rem;
+
+    transition: all 0.7s ease, color .5s ease;
+
+}
+
+.btn:hover{
+
+    color: var(--bege);
+    background-color: var(--laranja_dark);
+    text-decoration: underline;
+
+}
+
 .main-card{
 
     margin: 30px auto; 
@@ -82,21 +116,24 @@ hr{
 
     .texto{
 
-        width: 55%;
+        width: 70%;
         font-family: var(--f_secondary);
         text-indent: 40px;
         text-align: justify;
         margin:auto;
-        font-size: 1rem;
+        font-size: 1.2rem;
+
+        p{width: 95%;}
 
     }
 
     .imagem{
 
+        text-align: center;
         margin:auto;
         max-width: 600px;
-        width: 45%;
-        img{width: 100%;}
+        width: 30%;
+        img, p, a{width: 100%;}
 
     }
 
