@@ -1,5 +1,23 @@
 /* tablet */
 @media (max-width: 1024px){
+
+    .title{
+
+        font-size: 2rem;
+
+    }
+
+    .super-title{
+
+        font-size: 2rem;
+
+    }
+
+    h3 {   
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
     .card-display-container {
         gap: 20px;
     }
