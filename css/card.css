@@ -57,14 +57,14 @@
 }
 
 .card-front {
-    background-image: url("../img/cartas/FUNDO-09.png");
+    background-image: url("../img/cartas/FUNDO.png");
     background-size: cover;
     background-position: center;
     transform: rotateY(0deg);
 }
 
 .card-back {
-    background-image: url("../img/cartas/FUNDO-10.png");
+    background-image: url("../img/cartas/FUNDO2.png");
     background-size: cover;
     background-position: center;
     transform: rotateY(180deg);

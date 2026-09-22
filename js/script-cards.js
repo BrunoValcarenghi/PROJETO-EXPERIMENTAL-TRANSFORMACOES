@@ -2,66 +2,66 @@
 const cardsData = [
     {
         id: 1, 
-        title: "Card I", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "../img/cartas/CONTEUDO-01.png",
-        image2: "../img/cartas/CONTEUDO-02.png",
+        title: "DIGITAL I: Quem foi Verônica?", 
+        desc: "Conheça a trajetória de Verônica Oliveira, a “Mãe Loira”, e sua importância para a história e o acolhimento da população trans em Santa Maria.", 
+        image1: "../img/cartas/f1.png",
+        image2: "../img/cartas/v1.png",
         link: "#"
     },
     {
         id: 2, 
-        title: "Card II", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's text ever since 1966.", 
-        image1: "../img/cartas/CONTEUDO-03.png",
-        image2: "../img/cartas/CONTEUDO-04.png",
+        title: "DIGITAL II: A Casa Verônica", 
+        desc: "Conheça a Casa Verônica, sua atuação e os serviços de acolhimento, promoção da igualdade e enfrentamento às violências.", 
+        image1: "../img/cartas/f2.png",
+        image2: "../img/cartas/v2.png",
         link: "#"
     },
     {
         id: 3, 
-        title: "Card III", 
-        desc: "Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since 1966.", 
-        image1: "../img/cartas/CONTEUDO-05.png",
-        image2: "../img/cartas/CONTEUDO-06.png",
+        title: "DIGITAL III: Identidade de gênero", 
+        desc: "Entenda o que é identidade de gênero e conheça sua relação com gênero, expressão de gênero e orientação sexual.", 
+        image1: "../img/cartas/f3.png",
+        image2: "../img/cartas/v3.png",
         link: "#"
     },
     {
         id: 4, 
-        title: "Card IV", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "../img/cartas/CONTEUDO-07.png",
-        image2: "../img/cartas/CONTEUDO-08.png",
+        title: "DIGITAL IV: Nome social e cidadania", 
+        desc: "Conheça o conceito de nome social e informações sobre seu reconhecimento e utilização por pessoas trans.", 
+        image1: "../img/cartas/f4.png",
+        image2: "../img/cartas/v4.png",
         link: "#"
     },
     {
         id: 5, 
-        title: "Card V", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png",
+        title: "DIGITAL V: Transfobia e legislação", 
+        desc: "Aprofunde seus conhecimentos sobre a legislação brasileira e o reconhecimento jurídico da homofobia e da transfobia.", 
+        image1: "../img/cartas/f5.png",
+        image2: "../img/cartas/v5.png",
         link: "#"
     },
     {
         id: 6, 
-        title: "Card VI", 
-        desc: "Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png",
+        title: "DIGITAL VI: Onde buscar apoio?", 
+        desc: "Conheça espaços e serviços que oferecem acolhimento, atendimento e apoio à população trans em Santa Maria.", 
+        image1: "../img/cartas/f6.png",
+        image2: "../img/cartas/v6.png",
         link: "#"
     },
     {
         id: 7, 
-        title: "Card VII", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png",
+        title: "DIGITAL VII: Os três eixos da Casa Verônica", 
+        desc: "Explore os três eixos de atuação da Casa Verônica e conheça as ações desenvolvidas em cada um deles.", 
+        image1: "../img/cartas/f7.png",
+        image2: "../img/cartas/v7.png",
         link: "#"
     },
     {
         id: 8, 
-        title: "Card VIII", 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966.", 
-        image1: "img/card.png",
-        image2: "img/card.png",
+        title: "DIGITAL VIII: Interseccionalidade na prática", 
+        desc: "Entenda como diferentes marcadores sociais podem se relacionar e produzir experiências distintas de desigualdade e acesso a direitos.", 
+        image1: "../img/cartas/f8.png",
+        image2: "../img/cartas/v8.png",
         link: "#"
     }
 ];

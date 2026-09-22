@@ -177,13 +177,23 @@ hr{
     gap: 25px;
     max-width: 1200px;
     width: 90%;
-    margin: 30px auto 40px auto;
+    margin: 30px auto 80px auto;
 }
 
 .grid-card {
     color: var(--bege);
     h3{
         color: var(--bege);
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        flex-grow: 1; 
+    }
+    .div-btn{
+        align-self: center;
+        margin-top: auto; 
     }
     background-color: var(--marrom);
     border-radius: 12px;
@@ -193,6 +203,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
 .grid-card:hover {
@@ -217,4 +228,109 @@ hr{
 
     }
 
+}
+
+.equipe {
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    height: 500px;
+    background-image: url(../img/cartas/FUNDO.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    transition: transform 0.4s ease;
+}
+
+.membro:hover {
+    transform: translateY(-8px);
+}
+
+.membro .img-container {
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.membro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    transition: transform 0.5s ease;
+}
+
+.membro:hover img {
+    transform: scale(1.05);
+    border: none;
+}
+
+.membro h2 {
+    font-family: var(--f_secondary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--bege);
+    margin-bottom: 4px;
+}
+
+.membro .cargo {
+    font-family: var(--f_secondary);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--bege);
+    margin-bottom: 12px;
+}
+
+.membro .botao_devs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.membro .botao_devs a {
+    text-decoration: none;
+}
+
+.membro .botao_devs i {
+    font-size: 20px;
+    color: var(--bege);;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.membro .botao_devs i:hover {
+    color: #FFFFFF;
+    background-color: var(--laranja_light);
+    transform: scale(1.1);
 }

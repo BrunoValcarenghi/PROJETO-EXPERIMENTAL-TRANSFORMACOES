@@ -67,6 +67,20 @@
 
     }
 
+    .tabela {
+        gap: 30px;
+    }
+    
+    .membro {
+        height: 400px;
+        width: 240px;
+        h2 {font-size: 1rem;}
+    }
+
+    .membro .img-container {
+        height: 240px;
+    }
+
 }
 
 /* celular */
@@ -178,6 +192,22 @@
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .tabela {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membro {
+        height: 500px;
+        width: 85%;
+        max-width: 280px;
+        h2 {font-size: 1.5rem;}
+    }
+
+    .membro .img-container {
+        height: 280px;
     }
 
 }
