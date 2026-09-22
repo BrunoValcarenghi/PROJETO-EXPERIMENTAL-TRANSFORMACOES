@@ -81,6 +81,11 @@
         height: 240px;
     }
 
+    .btn-card {
+        font-size: .8rem;
+        bottom: 60px;
+    }
+
 }
 
 /* celular */
@@ -210,6 +215,10 @@
         height: 280px;
     }
 
+    .btn-card {
+        bottom: 40px;
+    }
+
 }
 
 /* celularzinho */
@@ -223,5 +232,10 @@
 
     .title {
         font-size: 1.4rem;
+    }
+
+    .btn-card {
+        padding: 5px 10px;
+        bottom: 20px;
     }
 }

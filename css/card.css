@@ -64,6 +64,7 @@
 }
 
 .card-back {
+    position: relative;
     background-image: url("../img/cartas/FUNDO2.png");
     background-size: cover;
     background-position: center;
@@ -81,6 +82,35 @@
 
 .card-flip-container:hover .card-character {
     transform: translateZ(70px);
+}
+
+.btn-card {
+    font-family: var(--f_secondary);
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(50px);
+    z-index: 6;
+    
+    background: linear-gradient(90deg, var(--laranja_dark) 0%, var(--marrom) 100%);
+    max-width: 70%;
+    
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 5px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+
+    transition: transform 0.3s ease;
+}
+
+.btn-card:hover {
+    
+    transform: translateX(-50%) translateZ(70px) scale(1.05);
+
 }
 
 /*holo*/

@@ -152,7 +152,7 @@ function updateUI() {
 
     const cardLink = document.getElementById('cardLink');
     if (cardLink) {
-        cardLink.href = card.link; // CORRIGIDO: de currentCard.link para card.link
+        cardLink.href = card.link;
     }
 
     const dots = document.querySelectorAll('.dot');
