@@ -38,7 +38,8 @@
 
 body {
     font-family: var(--f_primary);
-    background: linear-gradient(var(--marrom) 100px, #b7876d,  50vh, var(--bege) 100vh);
+    background-color: var(--bege);
+    /*background: linear-gradient(var(--marrom) 100px, #b7876d,  50vh, var(--bege) 100vh);*/
     color: var(--marrom);
     min-height: 100vh;
     margin: 0;
@@ -102,7 +103,7 @@ hr{
     text-align: center;
     font-size: 1rem;
 
-    transition: all 0.7s ease, color .5s ease;
+    transition: all 0.5s ease, color .2s ease;
 
 }
 

@@ -1,0 +1,25 @@
+footer {
+    background-color: var(--marrom);
+
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 20px;
+
+   
+
+}
+
+.footer-logos{
+
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
