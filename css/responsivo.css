@@ -9,7 +9,12 @@
 
     .super-title{
 
-        font-size: 2rem;
+        font-size: 2.5rem;
+
+    }
+    .sub-title{
+        
+        font-size: 1.2rem;
 
     }
 
@@ -222,6 +227,38 @@
     .footer-logos{
         text-align: center;
         display:block;
+    }
+
+    .hero-transformacoes .super-title {
+        font-size: 2.5rem;
+        margin-bottom: -20px;
+    }
+
+    .topic-sheet { 
+        padding: 25px 15px; 
+        min-height: auto;
+    }
+
+    .topics-slider-wrapper {
+        margin-top: 60px;
+    }
+
+    .topics-slider-wrapper::before { top: -36px; bottom: 36px; }
+    .topics-slider-wrapper::after { top: -18px; bottom: 18px; }
+
+    .nav-sticky-track {
+        top: 100px;
+        bottom: 30px;
+        width: 40px;
+    }
+
+    .nav-sticky-track.prev { left: 5px; }
+    .nav-sticky-track.next { right: 5px; }
+
+    .slide-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
     }
 
 }

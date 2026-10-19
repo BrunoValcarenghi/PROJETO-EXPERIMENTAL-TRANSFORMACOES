@@ -64,6 +64,14 @@ body {
 
 }
 
+.sub-title{
+
+    margin-top: -50px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
 h3 {
     font-family: var(--f_primary);
     font-size: 1.6rem;
@@ -335,3 +343,4 @@ hr{
     background-color: var(--laranja_light);
     transform: scale(1.1);
 }
+
