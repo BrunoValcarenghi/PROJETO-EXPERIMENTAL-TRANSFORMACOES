@@ -128,6 +128,7 @@ body.page-transformacoes {
     padding: 40px 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     min-height: 500px;
+    text-align: center;
 }
 
 .topic-title {
@@ -150,12 +151,12 @@ body.page-transformacoes {
     animation: discardToRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-@keyframes discardToLeft {
+@keyframes discardToRight {
     0% { transform: translateX(0) rotate(0deg); opacity: 1; }
     100% { transform: translateX(-120%) rotate(-6deg); opacity: 0; }
 }
 
-@keyframes discardToRight {
+@keyframes discardToLeft {
     0% { transform: translateX(0) rotate(0deg); opacity: 1; }
     100% { transform: translateX(120%) rotate(6deg); opacity: 0; }
 }
@@ -221,6 +222,8 @@ body.page-transformacoes {
     transform: scale(1.2);
 }
 
-@media (max-width: 767px) {
-    
+.topic-imagem{
+
+    width: 80%
+
 }

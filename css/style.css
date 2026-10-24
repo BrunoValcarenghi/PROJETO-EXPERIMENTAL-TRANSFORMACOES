@@ -147,7 +147,7 @@ hr{
     max-width: 1200px;
     width: 90%;
 
-    .texto{
+    .texto, .texto-sem-imagem{
 
         width: 70%;
         font-family: var(--f_secondary);
@@ -160,6 +160,12 @@ hr{
             width: 90%;   
             margin:auto;
         }
+
+    }
+
+    .texto-sem-imagem{
+
+        width: 100%;
 
     }
 
@@ -344,3 +350,9 @@ hr{
     transform: scale(1.1);
 }
 
+.btn-group {
+
+    margin: 0px 8%;
+    display: flex;
+
+}

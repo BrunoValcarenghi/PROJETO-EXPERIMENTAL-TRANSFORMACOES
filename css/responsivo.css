@@ -47,7 +47,7 @@
         padding: 15px 30px;
     }
     .nav-menu {
-        gap: 20px; /* Reduz o espaço entre os links no tablet */
+        gap: 20px;
     }
     .nav-link {
         font-size: 1.8rem;
@@ -89,6 +89,19 @@
     .btn-card {
         font-size: .8rem;
         bottom: 60px;
+    }
+
+    .esconder-mobile{
+
+        display:none;
+
+    }
+
+    .btn-group {
+
+        margin: 0px 0px;
+        display: block;
+
     }
 
 }
@@ -261,6 +274,7 @@
         font-size: 1.2rem;
     }
 
+
 }
 
 /* celularzinho */
@@ -270,6 +284,12 @@
         height: auto;
         aspect-ratio: 309 / 531;
         max-width: 40vw;
+    }
+
+    .hero-transformacoes .super-title{
+
+        font-size: 1.4rem;
+
     }
 
     .title {
