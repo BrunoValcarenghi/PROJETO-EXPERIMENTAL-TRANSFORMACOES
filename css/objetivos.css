@@ -1,0 +1,28 @@
+.objetivos {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: var(--marrom);
+    align-items: stretch;
+}
+
+.geral, .especificos {
+
+    width: 95%;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--bege);
+  
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.especificos {
+    .especificos-item {
+        margin: 10px 0;
+    }
+}

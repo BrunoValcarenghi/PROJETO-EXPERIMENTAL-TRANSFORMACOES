@@ -207,8 +207,9 @@ hr{
 }
 
 .grid-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     max-width: 1200px;
     width: 90%;
@@ -217,7 +218,10 @@ hr{
 
 .grid-card {
     color: var(--bege);
-    h3{
+    flex: 1 1 300px;
+    max-width: 380px;
+    
+    h3 {
         color: var(--bege);
         margin-bottom: 15px;
     }
@@ -226,7 +230,7 @@ hr{
         line-height: 1.5;
         flex-grow: 1; 
     }
-    .div-btn{
+    .div-btn {
         align-self: center;
         margin-top: auto; 
     }
@@ -238,7 +242,6 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .grid-card:hover {
@@ -370,6 +373,13 @@ hr{
     transform: scale(1.1);
 }
 
+.info-membro{
+
+    margin: auto;
+    width: 250px;
+
+}
+
 .btn-group {
 
     margin: 0px 8%;
@@ -446,5 +456,106 @@ hr{
 .card-tema:hover{
 
     width: 72%;
+
+}
+
+.expandable-pill-container {
+    margin: 25px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.pill-btn {
+    background-color: var(--bege);
+    color: var(--marrom);
+    font-family: var(--f_secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.pill-btn:hover {
+    background-color: var(--laranja_light);
+    color: var(--bege);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pill-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: var(--bege);
+    color: var(--marrom);
+    border-radius: 20px;
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity .6s ease, padding 0.3s ease, margin-top 0.3s ease;
+    
+}
+
+.pill-content.expanded {
+    max-height: 1500px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.pill-content-inner {
+    font-family: var(--f_secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-indent: 40px;
+    text-align: justify;
+    margin:auto;
+    padding: 20px;
+}
+
+.dark-background{
+    background-color: var(--marrom);
+    color: var(--bege);
+}
+
+section{
+
+    margin-bottom: 200px;
+
+}
+
+.carta-atras{
+
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    background-color: var(--bege);
+    height: 70px;
+    margin: -30px auto;
+    border-radius: 30px 30px 0px 0px;
+
+}
+
+.fundo-carta{
+
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--bege);
+    color: var(--marrom);
+    border-radius: 30px;
+
+}
+
+.orientador{
+
+    width: 90%;
+    margin: 40px auto;
+    padding-bottom: 50px;
 
 }

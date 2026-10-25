@@ -109,6 +109,18 @@
         width: 100% !important;
     }
 
+    .objetivos{
+
+        width: 80%;
+        grid-template-columns: 100%;
+        display: block;
+        .geral, .especificos{
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+
 }
 
 /* celular */
