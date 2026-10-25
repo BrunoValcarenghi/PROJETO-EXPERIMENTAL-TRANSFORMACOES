@@ -376,3 +376,75 @@ hr{
     display: flex;
 
 }
+
+.div-texto{
+
+    text-indent: 40px;
+    font-size: 1.2rem;
+    margin: auto;
+    width: 70%;
+    font-family: var(--f_secondary);
+    text-align: justify;
+
+}
+
+.card-tema{
+
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    background-color: var(--marrom);
+    width: 70%;
+    display: flex;
+    color: var(--bege);
+
+    .tema-imagem{
+
+        text-align: center;
+        width: 20%;
+        img{width: 80%;}
+
+    }
+
+    .tema-texto{
+
+        text-indent: 40px;
+        width: 80%;
+
+        h3{
+            text-align: center;
+            color: var(--bege);
+        }
+
+        p{  
+            font-family: var(--f_secondary);
+            text-align: justify;
+            color: var(--bege);
+        }
+
+    }
+
+    .div-btn{
+        
+        a{
+            font-size: 1.3rem;
+            color: var(--laranja_dark);
+            background-color: var(--bege);
+        }
+
+        a:hover{
+            color: var(--bege);
+            background-color: var(--laranja_light);
+        }
+
+    }  
+
+    transition: all ease .3s;
+
+}
+
+.card-tema:hover{
+
+    width: 72%;
+
+}

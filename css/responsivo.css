@@ -104,6 +104,11 @@
 
     }
 
+    .tema-texto{
+        a{font-size: .8rem !important;;}
+        width: 100% !important;
+    }
+
 }
 
 /* celular */
@@ -281,6 +286,12 @@
             font-size: .7rem;
 
         }
+    }
+
+    .super-title{
+
+        font-size: 2rem;
+
     }
 
 }
