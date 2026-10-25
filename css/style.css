@@ -133,7 +133,12 @@ hr{
 }
 
 .div-btn{
+    
+    a{
 
+        font-size: 1rem;
+
+    }
     text-align: center;
     width: 100%;
     margin: 40px auto;
