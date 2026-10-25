@@ -157,8 +157,23 @@ hr{
         font-size: 1.2rem;
 
         p{
+
             width: 90%;   
             margin:auto;
+
+        }
+        ul, ol{
+
+            text-indent: 10px;
+            margin: auto;
+            width: 80%;  
+
+            li{
+
+                margin: 10px 0px;
+
+            }
+
         }
 
     }
