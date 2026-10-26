@@ -3,11 +3,22 @@
     margin: 40px auto;
 }
 
+.esconder-mobile{
+    iframe{
+            width: 70vw; 
+            aspect-ratio: 16 / 8.7; 
+    }
+}
+
+.esconder-pc{
+    iframe{
+            width: 70vw; 
+            aspect-ratio: 1/1; 
+    }
+}
+
 iframe{
-
-    width: 70vw; 
-
-    aspect-ratio: 16 / 8.7; 
+    
     height: auto;
     
     border: none; 
@@ -15,3 +26,4 @@ iframe{
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 
 }
+

@@ -97,6 +97,12 @@
 
     }
 
+    .esconder-pc{
+
+        display:block;
+
+    }
+
     .btn-group {
 
         margin: 0px 0px;
