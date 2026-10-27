@@ -176,7 +176,7 @@
 
     .card-description {
         font-size: 0.95rem;
-        text-align: justify;
+        text-align: left;
         text-indent: 15px;
     }
 
@@ -301,7 +301,7 @@
     
         a{
 
-            font-size: .7rem;
+            font-size: .85rem;
 
         }
     }
@@ -311,6 +311,64 @@
         font-size: 2rem;
 
     }
+
+    p, li, .especificos-item{
+
+        text-indent: 20px;
+        text-align: left;
+        font-size: .8rem;
+
+    }
+
+    .grid-card{
+
+        p{
+
+        text-indent: 10px;
+
+        }
+
+    }
+
+    .div-texto h3{
+            text-align: center;
+            text-indent: 0px;
+    }
+
+    .card-tema{
+
+        width: 90%;
+
+        h3, .div-btn{ 
+            text-align: center;
+            text-indent: 0px;
+        }
+        p{
+
+            text-align: left;
+            text-indent: 10px;
+
+        }
+
+    }
+
+    .card-tema:hover{
+
+        width: 92%;
+
+    }
+
+    .objetivos, .carta-atras, .fundo-carta, .div-texto{
+
+        width: 90%;
+
+    }
+
+    .topic-imagem{
+
+        width: 100%;
+
+    }    
 
 }
 
