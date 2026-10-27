@@ -13,7 +13,11 @@
 .esconder-pc{
     iframe{
             width: 70vw; 
-            aspect-ratio: 1/1; 
+            aspect-ratio: 1/1.17; 
+    }
+    canvas{
+        -ms-touch-action: none;
+        touch-action: none;
     }
 }
 
