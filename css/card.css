@@ -57,7 +57,7 @@
 }
 
 .card-front {
-    background-image: url("../img/cartas/FUNDO.png");
+    background-image: var(--card-background);
     background-size: cover;
     background-position: center;
     transform: rotateY(0deg);
@@ -65,52 +65,43 @@
 
 .card-back {
     position: relative;
-    background-image: url("../img/cartas/FUNDO2.png");
+    background-image: var(--card-background);
     background-size: cover;
     background-position: center;
     transform: rotateY(180deg);
 }
 
-.card-character {
+.card-art,
+.card-mark {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
     pointer-events: none;
-    transform: translateZ(40px);
-    transition: transform 0.3s ease;
+    transform: translateZ(1px);
 }
 
-.card-flip-container:hover .card-character {
-    transform: translateZ(70px);
+.card-mark {
+    z-index: 2;
+    transform: translateZ(2px);
 }
 
-.btn-card {
-    font-family: var(--f_secondary);
+.card-link-hotspot {
     position: absolute;
-    bottom: 70px;
+    bottom: 9%;
     left: 50%;
-    transform: translateX(-50%) translateZ(50px);
+    width: 68%;
+    height: 8%;
+    transform: translateX(-50%) translateZ(4px);
     z-index: 6;
-    
-    background: linear-gradient(90deg, var(--laranja_dark) 0%, var(--marrom) 100%);
-    max-width: 70%;
-    
-
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: .9rem;
-    padding: 5px 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    white-space: nowrap;
-
-    transition: transform 0.3s ease;
+    border-radius: 999px;
+    cursor: pointer;
 }
 
-.btn-card:hover {
-    
-    transform: translateX(-50%) translateZ(70px) scale(1.05);
-
+.card-link-hotspot:focus-visible {
+    outline: 2px solid var(--laranja_light);
+    outline-offset: 2px;
 }
 
 /*holo*/

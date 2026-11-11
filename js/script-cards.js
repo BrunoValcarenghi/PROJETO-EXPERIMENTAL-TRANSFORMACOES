@@ -2,67 +2,91 @@
 const cardsData = [
     {
         id: 1, 
-        title: "DIGITAL I: Quem foi Verônica?", 
+        title: "DIGITAL I: Verônica Oliveira", 
         desc: "Conheça a trajetória de Verônica Oliveira, a “Mãe Loira”, e sua importância para a história e o acolhimento da população trans em Santa Maria.", 
-        image1: "../img/cartas/f1.png",
-        image2: "../img/cartas/v1.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-01.png",
+        image2: "img/cartas/TEXTO-02.png",
+        mark: "img/cartas/MARCA-01.png",
+        frontBackground: "img/cartas/FUNDO-01.png",
+        backBackground: "img/cartas/FUNDO-02.png",
+        link: "/transformacoes?carta=casa-veronica#topicsContainer"
     },
     {
         id: 2, 
         title: "DIGITAL II: A Casa Verônica", 
         desc: "Conheça a Casa Verônica, sua atuação e os serviços de acolhimento, promoção da igualdade e enfrentamento às violências.", 
-        image1: "../img/cartas/f2.png",
-        image2: "../img/cartas/v2.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-03.png",
+        image2: "img/cartas/TEXTO-04.png",
+        mark: "img/cartas/MARCA-03.png",
+        frontBackground: "img/cartas/FUNDO-03.png",
+        backBackground: "img/cartas/FUNDO-04.png",
+        link: "/transformacoes?carta=casa-veronica#topicsContainer"
     },
     {
         id: 3, 
         title: "DIGITAL III: Identidade de gênero", 
         desc: "Entenda o que é identidade de gênero e conheça sua relação com gênero, expressão de gênero e orientação sexual.", 
-        image1: "../img/cartas/f3.png",
-        image2: "../img/cartas/v3.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-05.png",
+        image2: "img/cartas/TEXTO-06.png",
+        mark: "img/cartas/MARCA-05.png",
+        frontBackground: "img/cartas/FUNDO-05.png",
+        backBackground: "img/cartas/FUNDO-06.png",
+        link: "/transformacoes?carta=genero-e-identidade#topicsContainer"
     },
     {
         id: 4, 
-        title: "DIGITAL IV: Nome social e cidadania", 
+        title: "DIGITAL IV: Nome social", 
         desc: "Conheça o conceito de nome social e informações sobre seu reconhecimento e utilização por pessoas trans.", 
-        image1: "../img/cartas/f4.png",
-        image2: "../img/cartas/v4.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-07.png",
+        image2: "img/cartas/TEXTO-08.png",
+        mark: "img/cartas/MARCA-07.png",
+        frontBackground: "img/cartas/FUNDO-07.png",
+        backBackground: "img/cartas/FUNDO-08.png",
+        link: "/transformacoes?carta=direitos-e-cidadania#topicsContainer"
     },
     {
         id: 5, 
-        title: "DIGITAL V: Transfobia e legislação", 
+        title: "DIGITAL V: Transfobia e proteção penal", 
         desc: "Aprofunde seus conhecimentos sobre a legislação brasileira e o reconhecimento jurídico da homofobia e da transfobia.", 
-        image1: "../img/cartas/f5.png",
-        image2: "../img/cartas/v5.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-09.png",
+        image2: "img/cartas/TEXTO-10.png",
+        mark: "img/cartas/MARCA-09.png",
+        frontBackground: "img/cartas/FUNDO-09.png",
+        backBackground: "img/cartas/FUNDO-10.png",
+        link: "/transformacoes?carta=direitos-e-cidadania#topicsContainer"
     },
     {
         id: 6, 
-        title: "DIGITAL VI: Onde buscar apoio?", 
+        title: "DIGITAL VI: Acesso ao processo transexualizador", 
         desc: "Conheça espaços e serviços que oferecem acolhimento, atendimento e apoio à população trans em Santa Maria.", 
-        image1: "../img/cartas/f6.png",
-        image2: "../img/cartas/v6.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-11.png",
+        image2: "img/cartas/TEXTO-12.png",
+        mark: "img/cartas/MARCA-11.png",
+        frontBackground: "img/cartas/FUNDO-11.png",
+        backBackground: "img/cartas/FUNDO-12.png",
+        link: "/transformacoes?carta=direitos-e-cidadania#topicsContainer"
     },
     {
         id: 7, 
-        title: "DIGITAL VII: Os três eixos da Casa Verônica", 
+        title: "DIGITAL VII: Para que existe a Casa Verônica", 
         desc: "Explore os três eixos de atuação da Casa Verônica e conheça as ações desenvolvidas em cada um deles.", 
-        image1: "../img/cartas/f7.png",
-        image2: "../img/cartas/v7.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-13.png",
+        image2: "img/cartas/TEXTO-14.png",
+        mark: "img/cartas/MARCA-13.png",
+        frontBackground: "img/cartas/FUNDO-13.png",
+        backBackground: "img/cartas/FUNDO-14.png",
+        link: "/transformacoes?carta=casa-veronica#topicsContainer"
     },
     {
         id: 8, 
-        title: "DIGITAL VIII: Interseccionalidade na prática", 
+        title: "DIGITAL VIII: Interseccionalidade", 
         desc: "Entenda como diferentes marcadores sociais podem se relacionar e produzir experiências distintas de desigualdade e acesso a direitos.", 
-        image1: "../img/cartas/f8.png",
-        image2: "../img/cartas/v8.png",
-        link: "#"
+        image1: "img/cartas/TEXTO-15.png",
+        image2: "img/cartas/TEXTO-16.png",
+        mark: "img/cartas/MARCA-15.png",
+        frontBackground: "img/cartas/FUNDO-15.png",
+        backBackground: "img/cartas/FUNDO-16.png",
+        link: "/transformacoes?carta=diversidade-e-linguagem#topicsContainer"
     }
 ];
 
@@ -139,9 +163,15 @@ function updateUI() {
     
     const imgFront = document.getElementById('imgFront');
     const imgBack = document.getElementById('imgBack');
+    const imgMark = document.getElementById('imgMark');
     if (imgFront && imgBack) {
         imgFront.src = card.image1;
         imgBack.src = card.image2;
+        imgMark.src = card.mark;
+        const frontBackgroundUrl = new URL(card.frontBackground, document.baseURI).href;
+        const backBackgroundUrl = new URL(card.backBackground, document.baseURI).href;
+        document.querySelector('.card-front').style.setProperty('--card-background', `url("${frontBackgroundUrl}")`);
+        document.querySelector('.card-back').style.setProperty('--card-background', `url("${backBackgroundUrl}")`);
     }
 
     const titles = document.querySelectorAll('.card-title, .card-title-mobile');
@@ -150,10 +180,8 @@ function updateUI() {
     const desc = document.getElementById('cardDescription');
     if (desc) desc.innerText = card.desc;
 
-    const cardLink = document.getElementById('cardLink');
-    if (cardLink) {
-        cardLink.href = card.link;
-    }
+    document.getElementById('cardLinkHotspot').href = card.link;
+    document.getElementById('cardInfoLink').href = card.link;
 
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, idx) => { dot.classList.toggle('active', idx === currentIndex); });
@@ -234,3 +262,7 @@ cardContainer.addEventListener('touchend', () => {
 
 // Inicialização da interface na primeira carga
 updateUI();
+
+document.getElementById('cardLinkHotspot').addEventListener('click', (event) => {
+    event.stopPropagation();
+});
